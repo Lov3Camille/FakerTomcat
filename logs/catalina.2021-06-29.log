@@ -1,0 +1,52 @@
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Server built:		2021-06-27 17:10:47
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Server number:		1.0.0
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : OS Name	:		Mac OS X
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : OS Version:		11.4
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Architecture:		x86_64
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : JVM Version:		16.0.1+9-24
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+06 29, 2021 22:47:52 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 1 ms
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Server built:		2021-06-27 17:10:47
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Server number:		1.0.0
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : OS Name	:		Mac OS X
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : OS Version:		11.4
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Architecture:		x86_64
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : JVM Version:		16.0.1+9-24
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 1 ms
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 1 ms
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+06 29, 2021 22:52:31 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 0 ms
