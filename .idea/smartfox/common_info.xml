@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SmartFoxWorkToolsProjectState">
     <option name="branch" value="master" />
-    <option name="gitUrl" value="https://gitee.com/lovecamille/faker-tomcat.git" />
+    <option name="gitUrl" value="git@gitlab.alibaba-inc.com:qiushu.wy/FakerTomcat.git" />
     <option name="localBranch" value="master" />
     <option name="revision" value="e1ba1a7e3d3acca3c306be93eb871c32e9e07d2e" />
   </component>
