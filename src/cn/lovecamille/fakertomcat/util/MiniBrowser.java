@@ -17,7 +17,7 @@ import java.util.Set;
 public class MiniBrowser {
 
     public static void main(String[] args) {
-        String url = "http://static.how2j.cn/diytomcat.html";
+        String url = "https://www.google.com/?hl=zh_CN";
         String contentString= getContentString(url,false);
         System.out.println(contentString);
         String httpString= getHttpString(url,false);
@@ -41,11 +41,11 @@ public class MiniBrowser {
     }
 
     public static byte[] getContentBytes(String url, boolean gzip) {
-        byte[] response = getHttpBytes(url,gzip);
+        byte[] response = getHttpBytes(url, gzip);
         byte[] doubleReturn = "\r\n\r\n".getBytes();
 
         int pos = -1;
-        for (int i = 0; i < response.length-doubleReturn.length; i++) {
+        for (int i = 0; i < response.length - doubleReturn.length; i++) {
             byte[] temp = Arrays.copyOfRange(response, i, i + doubleReturn.length);
 
             if(Arrays.equals(temp, doubleReturn)) {
@@ -53,7 +53,7 @@ public class MiniBrowser {
                 break;
             }
         }
-        if(-1==pos) {
+        if(-1 == pos) {
             return null;
         }
 

@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
@@ -79,6 +80,14 @@ public class Server {
                     } catch (IOException e) {
                         LogFactory.get().error(e);
                         e.printStackTrace();
+                    } finally {
+                        try {
+                            if (!s.isClosed()) {
+                                s.close();
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 };
                 ThreadPoolUtil.run(runnable);
@@ -131,5 +140,13 @@ public class Server {
         OutputStream os = s.getOutputStream();
         os.write(responseBytes);
         s.close();
+    }
+
+    protected void handle404(Socket s, String uri) throws IOException {
+        OutputStream os = s.getOutputStream();
+        String responseText = StrUtil.format(Constant.TEXT_FORMAT_404, uri, uri);
+        responseText = Constant.RESPONSE_HEAD_404 + responseText;
+        byte[] responseByte = responseText.getBytes(StandardCharsets.UTF_8);
+        os.write(responseByte);
     }
 }
