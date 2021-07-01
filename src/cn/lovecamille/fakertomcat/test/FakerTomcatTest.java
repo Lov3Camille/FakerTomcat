@@ -4,7 +4,6 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.system.SystemUtil;
 import cn.lovecamille.fakertomcat.util.MiniBrowser;
 import org.junit.Assert;
 import org.junit.BeforeClass;

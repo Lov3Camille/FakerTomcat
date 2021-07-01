@@ -18,7 +18,7 @@ public class Host {
 
     public Host(String name, Engine engine) {
         this.contextMap = new HashMap<>();
-        this.name = ServerXmlUtil.getHostName();
+        this.name = name;
         this.engine = engine;
 
         scanContextsOnWebAppsFolder();

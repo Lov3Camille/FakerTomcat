@@ -5,6 +5,7 @@ import cn.lovecamille.fakertomcat.Bootstrap;
 import cn.lovecamille.fakertomcat.catalina.Context;
 import cn.lovecamille.fakertomcat.catalina.Engine;
 import cn.lovecamille.fakertomcat.catalina.Host;
+import cn.lovecamille.fakertomcat.catalina.Service;
 import cn.lovecamille.fakertomcat.util.MiniBrowser;
 
 import java.io.IOException;
@@ -21,12 +22,12 @@ public class HttpRequest {
     private String uri;
     private final Socket socket;
     private Context context;
-    private Engine engine;
+    private Service service;
     private final char URL_SEPERATOR = '?';
 
-    public HttpRequest(Socket socket, Engine engine) throws IOException {
+    public HttpRequest(Socket socket, Service service) throws IOException {
         this.socket = socket;
-        this.engine = engine;
+        this.service = service;
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString)) {
             return;
@@ -57,6 +58,8 @@ public class HttpRequest {
         } else {
             path = "/" + path;
         }
+
+        Engine engine = service.getEngine();
 
         context = engine.getDefaultHost().getContext(path);
 
