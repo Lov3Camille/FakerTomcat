@@ -1,5 +1,7 @@
 package cn.lovecamille.fakertomcat.catalina;
 
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
@@ -8,6 +10,7 @@ import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
 import cn.lovecamille.fakertomcat.util.Constant;
 import cn.lovecamille.fakertomcat.util.ThreadPoolUtil;
+import cn.lovecamille.fakertomcat.util.WebXmlUtil;
 import cn.lovecamille.fakertomcat.web.HttpRequest;
 import cn.lovecamille.fakertomcat.web.HttpResponse;
 
@@ -31,71 +34,14 @@ public class Server {
     }
 
     public void start() {
+        TimeInterval timeInterval = DateUtil.timer();
         logJVM();
         init();
+        LogFactory.get().info("Server start in {} ms", timeInterval.intervalMs());
     }
 
     private void init() {
-        try {
-            int port = 18080;
-
-            // build a server at port 18080
-            ServerSocket ss = new ServerSocket(port);
-
-            while (true) {
-
-                // listen to the serve and accept the connection
-                Socket s = ss.accept();
-                Runnable runnable = () -> {
-                    try {
-                        HttpRequest httpRequest = new HttpRequest(s, service);
-                        HttpResponse httpResponse = new HttpResponse();
-                        String uri = httpRequest.getUri();
-                        if (null == uri) {
-                            return;
-                        }
-                        System.out.println("Browser's input is: \r\n" + httpRequest.getRequestString());
-                        System.out.println("URI is: " + uri);
-
-                        Context context = httpRequest.getContext();
-
-                        if ("/".equals(uri)) {
-                            String html = "Hello FakerTomcat from WU Yan";
-                            httpResponse.getWriter().println(html);
-                        } else {
-                            String fileName = StrUtil.removePrefix(uri, "/");
-                            File file = FileUtil.file(context.getDocBase(), fileName);
-                            if (file.exists()) {
-                                String fileContents = FileUtil.readUtf8String(file);
-                                httpResponse.getWriter().println(fileContents);
-
-                                if ("timeConsumer.html".equals(fileName)) {
-                                    ThreadUtil.sleep(1000);
-                                }
-                            } else {
-                                httpResponse.getWriter().println("File Not Found");
-                            }
-                        }
-                        handle200(s, httpResponse);
-                    } catch (IOException e) {
-                        LogFactory.get().error(e);
-                        e.printStackTrace();
-                    } finally {
-                        try {
-                            if (!s.isClosed()) {
-                                s.close();
-                            }
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                };
-                ThreadPoolUtil.run(runnable);
-            }
-        } catch (IOException e) {
-            LogFactory.get().error(e);
-            e.printStackTrace();
-        }
+        service.start();
     }
 
     /**
@@ -117,36 +63,5 @@ public class Server {
         for (String key : keys) {
             LogFactory.get().info(key + ":\t\t" + infos.get(key));
         }
-    }
-
-    /**
-     * parse the http response if it is "200 OK"
-     * @param s socket
-     * @param httpResponse response
-     * @throws IOException IOException
-     */
-    private static void handle200(Socket s, HttpResponse httpResponse) throws IOException {
-        String contentType = httpResponse.getContentType();
-        String headText = Constant.RESPONSE_HEAD_202;
-        headText = StrUtil.format(headText, contentType);
-        byte[] head = headText.getBytes();
-
-        byte[] body = httpResponse.getBody();
-
-        byte[] responseBytes = new byte[head.length + body.length];
-        ArrayUtil.copy(head, 0, responseBytes, 0, head.length);
-        ArrayUtil.copy(body, 0, responseBytes, head.length, body.length);
-
-        OutputStream os = s.getOutputStream();
-        os.write(responseBytes);
-        s.close();
-    }
-
-    protected void handle404(Socket s, String uri) throws IOException {
-        OutputStream os = s.getOutputStream();
-        String responseText = StrUtil.format(Constant.TEXT_FORMAT_404, uri, uri);
-        responseText = Constant.RESPONSE_HEAD_404 + responseText;
-        byte[] responseByte = responseText.getBytes(StandardCharsets.UTF_8);
-        os.write(responseByte);
     }
 }

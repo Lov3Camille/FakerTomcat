@@ -37,6 +37,9 @@ public class HttpRequest {
 
         if (!"/".equals(context.getPath())) {
             uri = StrUtil.removePrefix(uri, context.getPath());
+            if (StrUtil.isEmpty(uri)) {
+                uri = "/";
+            }
         }
     }
 
@@ -52,14 +55,18 @@ public class HttpRequest {
      * parse context's relative path
      */
     private void parseContext() {
+        Engine engine = service.getEngine();
+        context = engine.getDefaultHost().getContext(uri);
+        if (null != context) {
+            return;
+        }
+
         String path = StrUtil.subBetween(uri, "/", "/");
         if (null == path) {
             path = "/";
         } else {
             path = "/" + path;
         }
-
-        Engine engine = service.getEngine();
 
         context = engine.getDefaultHost().getContext(path);
 
@@ -70,7 +77,7 @@ public class HttpRequest {
 
     private void parseHttpRequest() throws IOException {
         InputStream is = this.socket.getInputStream();
-        byte[] bytes = MiniBrowser.readBytes(is);
+        byte[] bytes = MiniBrowser.readBytes(is, false);
         requestString = new String(bytes, StandardCharsets.UTF_8);
     }
 

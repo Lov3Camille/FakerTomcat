@@ -13,6 +13,7 @@ public class HttpResponse {
     private StringWriter stringWriter;
     private PrintWriter writer;
     private String contentType;
+    private byte[] body;
 
     public HttpResponse() {
         this.stringWriter = new StringWriter();
@@ -24,12 +25,23 @@ public class HttpResponse {
         return contentType;
     }
 
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
+
     public PrintWriter getWriter() {
         return writer;
     }
 
-    public byte[] getBody() throws UnsupportedEncodingException {
-        String content = stringWriter.toString();
-        return content.getBytes(StandardCharsets.UTF_8);
+    public byte[] getBody() {
+        if (null == body) {
+            String content = stringWriter.toString();
+            return content.getBytes(StandardCharsets.UTF_8);
+        }
+        return body;
+    }
+
+    public void setBody(byte[] body) {
+        this.body = body;
     }
 }

@@ -1,15 +1,13 @@
 package cn.lovecamille.fakertomcat.util;
 
+import cn.hutool.core.convert.Convert;
 import cn.hutool.core.io.FileUtil;
-import cn.lovecamille.fakertomcat.catalina.Context;
-import cn.lovecamille.fakertomcat.catalina.Engine;
-import cn.lovecamille.fakertomcat.catalina.Host;
+import cn.lovecamille.fakertomcat.catalina.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +15,21 @@ import java.util.List;
  * @author wuyan
  */
 public class ServerXmlUtil {
+    public static List<Connector> getConnectors(Service service) {
+        List<Connector> result = new ArrayList<>();
+        String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
+        Document document = Jsoup.parse(xml);
+
+        Elements elements = document.select("Connector");
+        for (Element element : elements) {
+            int port = Convert.toInt(element.attr("port"));
+            Connector connector = new Connector(service);
+            connector.setPort(port);
+            result.add(connector);
+        }
+        return result;
+    }
+
     public static List<Context> getContexts() {
         List<Context> result = new ArrayList<>();
         String xml = FileUtil.readUtf8String(Constant.serverXmlFile);

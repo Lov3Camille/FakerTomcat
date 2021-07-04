@@ -112,7 +112,7 @@ public class MiniBrowser {
             pWriter.println(httpRequestString);
             InputStream is = client.getInputStream();
 
-            result = readBytes(is);
+            result = readBytes(is, true);
             client.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -123,7 +123,7 @@ public class MiniBrowser {
 
     }
 
-    public static byte[] readBytes(InputStream is) throws IOException {
+    public static byte[] readBytes(InputStream is, boolean fully) throws IOException {
         int bufferSize = 1024;
         byte[] buffer = new byte[bufferSize];
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -136,7 +136,7 @@ public class MiniBrowser {
 
             byteArrayOutputStream.write(buffer, 0, length);
             // the length of stream is less than 1024
-            if (length != bufferSize) {
+            if (!fully && length != bufferSize) {
                 break;
             }
         }

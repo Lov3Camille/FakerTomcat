@@ -13,6 +13,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+import static cn.lovecamille.fakertomcat.util.MiniBrowser.getContentBytes;
+
 /**
  * @author wuyan
  */
@@ -62,13 +64,13 @@ public class FakerTomcatTest {
 
     @Test
     public void testaIndex() {
-        String html = getContentString("/index/index.html");
+        String html = getContentString("/index");
         Assert.assertEquals(html, "Hello FakerTomcat from index.html@index");
     }
 
     @Test
     public void testbIndex() {
-        String html = getContentString("/b/index.html");
+        String html = getContentString("/b");
         Assert.assertEquals(html, "Hello FakerTomcat from index.html@b");
     }
 
@@ -76,6 +78,32 @@ public class FakerTomcatTest {
     public void test404() {
         String response = getHttpString("/not_exist.html");
         containAssert(response, "HTTP/1.1 404 Not Found");
+    }
+
+    @Test
+    public void test500() {
+        String response = getHttpString("/500.html");
+        containAssert(response, "HTTP/1.1 500 Internal Server Error");
+    }
+
+    @Test
+    public void testExtTxt() {
+        String httpResponse = getHttpString("/ext.txt");
+        containAssert(httpResponse, "Content-Type:text/plain");
+    }
+
+    @Test
+    public void testPng() {
+        byte[] bytes = getContentBytes("/logo.png");
+        int pngFileLength = 1672;
+        Assert.assertEquals(pngFileLength, bytes.length);
+    }
+
+    @Test
+    public void testPdf() {
+        byte[] bytes = getContentBytes("/etf.pdf");
+        int pdfFileLength = 3590775;
+        Assert.assertEquals(pdfFileLength, bytes.length);
     }
 
     private String getHttpString(String uri) {
