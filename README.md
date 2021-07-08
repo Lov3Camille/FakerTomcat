@@ -1,1 +1,1 @@
-仿照Tomcat和Pandora的实现设计一个简易版Tomcat。
+仿照Tomcat的实现设计一个简易版Tomcat。
