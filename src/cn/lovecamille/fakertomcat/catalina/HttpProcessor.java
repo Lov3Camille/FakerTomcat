@@ -3,13 +3,17 @@ package cn.lovecamille.fakertomcat.catalina;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
+import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
+import cn.lovecamille.fakertomcat.servlets.DefaultServlet;
+import cn.lovecamille.fakertomcat.servlets.InvokerServlet;
 import cn.lovecamille.fakertomcat.util.Constant;
 import cn.lovecamille.fakertomcat.util.WebXmlUtil;
 import cn.lovecamille.fakertomcat.web.HttpRequest;
 import cn.lovecamille.fakertomcat.web.HttpResponse;
 
+import cn.lovecamille.fakertomcat.webappservlet.HelloServlet;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -26,36 +30,21 @@ public class HttpProcessor {
             if (null == uri) {
                 return;
             }
-            System.out.println("Browser's input is: \r\n" + httpRequest.getRequestString());
-            System.out.println("URI is: " + uri);
 
             Context context = httpRequest.getContext();
-
-            if ("/500.html".equals(uri)) {
-                throw new Exception("this is a deliberately created exception");
-            }
-            if ("/".equals(uri)) {
-                uri = WebXmlUtil.getWelcomeFile(httpRequest.getContext());
-            }
-
-            String fileName = StrUtil.removePrefix(uri, "/");
-            File file = FileUtil.file(context.getDocBase(), fileName);
-            if (file.exists()) {
-                String extName = FileUtil.extName(file);
-                String mimeType = WebXmlUtil.getMimeType(extName);
-                httpResponse.setContentType(mimeType);
-
-                byte[] body = FileUtil.readBytes(file);
-                httpResponse.setBody(body);
-
-                if ("timeConsumer.html".equals(fileName)) {
-                    ThreadUtil.sleep(1000);
-                }
+            String servletClassName = context.getServletClassName(uri);
+            if (null != servletClassName) {
+                InvokerServlet.getInstance().service(httpRequest, httpResponse);
             } else {
-                handle404(socket, uri);
-                return;
+                DefaultServlet.getInstance().service(httpRequest, httpResponse);
             }
-            handle200(socket, httpResponse);
+
+            if (Constant.CODE_200 == httpResponse.getStatus()) {
+                handle200(socket, httpResponse);
+            }
+            if (Constant.CODE_404 == httpResponse.getStatus()) {
+                handle404(socket, uri);
+            }
         } catch (IOException e) {
             LogFactory.get().error(e);
             e.printStackTrace();

@@ -1,0 +1,366 @@
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 113 ms
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 0 ms
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 0 ms
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 16:40:48 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 89 ms
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 0 ms
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 0 ms
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 18:10:47 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 131 ms
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 1 ms
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 1 ms
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 18:20:19 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 84 ms
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 0 ms
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 1 ms
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18080]
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18081]
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18082]
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18080]
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18081]
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18082]
+07 04, 2021 22:38:09 下午 cn.lovecamille.fakertomcat.catalina.Server start
+INFO : Server start in 4 ms
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 265 ms
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 1 ms
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 1 ms
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18080]
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18081]
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18082]
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Service init
+INFO : Initialization processed in 2 ms
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18080]
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18081]
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18082]
+07 04, 2021 22:40:56 下午 cn.lovecamille.fakertomcat.catalina.Server start
+INFO : Server start in 6 ms
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 142 ms
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 1 ms
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 0 ms
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18080]
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18081]
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18082]
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Service init
+INFO : Initialization processed in 2 ms
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18080]
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18081]
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18082]
+07 04, 2021 22:41:43 下午 cn.lovecamille.fakertomcat.catalina.Server start
+INFO : Server start in 8 ms
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 144 ms
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 1 ms
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 0 ms
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18080]
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18081]
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18082]
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Service init
+INFO : Initialization processed in 3 ms
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18080]
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18081]
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18082]
+07 04, 2021 22:42:16 下午 cn.lovecamille.fakertomcat.catalina.Server start
+INFO : Server start in 9 ms
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/ROOT has finished in 93 ms
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/webapps/index has finished in 0 ms
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 1 ms
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Mac OS X
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		11.4
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		x86_64
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		/Users/wuyan/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18080]
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18081]
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18082]
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Service init
+INFO : Initialization processed in 1 ms
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18080]
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18081]
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18082]
+07 04, 2021 23:03:22 下午 cn.lovecamille.fakertomcat.catalina.Server start
+INFO : Server start in 5 ms
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\ideaProjects\FakerTomcat\webapps\index
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\ideaProjects\FakerTomcat\webapps\index has finished in 165 ms
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory D:\ideaProjects\FakerTomcat\webapps\ROOT
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory D:\ideaProjects\FakerTomcat\webapps\ROOT has finished in 0 ms
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deploying web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Context <init>
+INFO : Deployment of web application directory /Users/wuyan/IdeaProjects/FakerTomcat/b has finished in 0 ms
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server Version:		FakerTomcat/1.0.0
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server built:		2021-06-27 17:10:47
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Server number:		1.0.0
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Name	:		Windows 10
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : OS Version:		10.0
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Architecture:		amd64
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : Java Home:		C:\Users\MSI-NB\.jdks\openjdk-16.0.1
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Version:		16.0.1+9-24
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server logJVM
+INFO : JVM Vendor:		Oracle Corporation
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18080]
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18081]
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Connector init
+INFO : Initializing ProtocolHandler [http-bio-18082]
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Service init
+INFO : Initialization processed in 2 ms
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18080]
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18081]
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Connector start
+INFO : Starting ProtocolHandler [http-bio-18082]
+07 08, 2021 22:42:28 下午 cn.lovecamille.fakertomcat.catalina.Server start
+INFO : Server start in 29 ms

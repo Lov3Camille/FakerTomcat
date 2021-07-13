@@ -106,6 +106,12 @@ public class FakerTomcatTest {
         Assert.assertEquals(pdfFileLength, bytes.length);
     }
 
+    @Test
+    public void testHello() {
+        String html = getContentString("/j2ee/hello");
+        Assert.assertEquals(html, "Hello FakerTomcat from HelloServlet");
+    }
+
     private String getHttpString(String uri) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         String http = MiniBrowser.getHttpString(url);
