@@ -15,25 +15,16 @@ public class Constant {
     public static final int CODE_500 = 500;
 
     public final static String RESPONSE_HEAD_202 =
-            """
-                    HTTP/1.1 200 OK\r
-                    Content-Type: {}\r
-                    \r
-                    """;
+            "HTTP/1.1 200 OK\r\n" +
+                    "Content-Type: {}\r\n\r\n";
 
     public static final String RESPONSE_HEAD_404 =
-            """
-                    HTTP/1.1 404 Not Found\r
-                    Content-Type: text/html\r
-                    \r
-                    """;
+            "HTTP/1.1 404 Not Found\r\n" +
+                    "Content-Type: text/html\r\n\r\n";
 
     public static final String RESPONSE_HEAD_500 =
-            """
-                    HTTP/1.1 500 Internal Server Error\r
-                    Content-Type:text/html\r
-                    \r
-                    """;
+            "HTTP/1.1 500 Internal Server Error\r\n"
+                    + "Content-Type: text/html\r\n\r\n";
 
     public static final String TEXT_FORMAT_404 =
             "<html><head><title>Faker Tomcat/1.0.1 - Error report</title><style>" +
