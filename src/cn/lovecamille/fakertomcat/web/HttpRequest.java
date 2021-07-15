@@ -123,4 +123,12 @@ public class HttpRequest extends BaseRequest {
     public String getMethod() {
         return method;
     }
+
+    public ServletContext getServletContext() {
+        return context.getServletContext();
+    }
+
+    public String getRealPath(String path) {
+        return getServletContext().getRealPath(path);
+    }
 }

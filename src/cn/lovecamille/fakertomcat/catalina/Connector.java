@@ -69,6 +69,7 @@ public class Connector implements Runnable {
                 ThreadPoolUtil.run(runnable);
             }
         } catch (IOException e) {
+            LogFactory.get().error(e);
             e.printStackTrace();
         }
     }

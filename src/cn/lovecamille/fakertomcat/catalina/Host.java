@@ -1,5 +1,6 @@
 package cn.lovecamille.fakertomcat.catalina;
 
+import cn.hutool.log.LogFactory;
 import cn.lovecamille.fakertomcat.util.Constant;
 import cn.lovecamille.fakertomcat.util.ServerXmlUtil;
 
@@ -42,7 +43,7 @@ public class Host {
     }
 
     private void scanContextsInServerXml() {
-        List<Context> contexts = ServerXmlUtil.getContexts();
+        List<Context> contexts = ServerXmlUtil.getContexts(this);
         for (Context context : contexts) {
             contextMap.put(context.getPath(), context);
         }
@@ -66,12 +67,28 @@ public class Host {
             path = "/" + path;
         }
         String docBase = folder.getAbsolutePath();
-        Context context = new Context(path, docBase);
+        Context context = new Context(path, docBase, this, true);
 
         contextMap.put(context.getPath(), context);
     }
 
     public Context getContext(String path) {
         return contextMap.get(path);
+    }
+
+    public void reload(Context context) {
+        LogFactory.get().info("Reloading Context with name [{}] has started", context.getPath());
+        String path = context.getPath();
+        String docBase = context.getDocBase();
+        boolean reloadable = context.isReloadable();
+        // stop
+        context.stop();
+        // remove
+        contextMap.remove(path);
+        // allocate new context
+        Context newContext = new Context(path, docBase, this, reloadable);
+        // assign it to map
+        contextMap.put(newContext.getPath(), newContext);
+        LogFactory.get().info("Reloading Context with name [{}] has completed", context.getPath());
     }
 }

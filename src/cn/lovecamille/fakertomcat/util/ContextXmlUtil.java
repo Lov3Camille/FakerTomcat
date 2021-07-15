@@ -16,7 +16,7 @@ public class ContextXmlUtil {
             return element.text();
         } catch (Exception e) {
             e.printStackTrace();
-            return "WEB_INF/web.xml";
+            return "WEB-INF/web.xml";
         }
     }
 }

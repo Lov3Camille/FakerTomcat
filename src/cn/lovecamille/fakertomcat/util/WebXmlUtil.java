@@ -1,5 +1,7 @@
 package cn.lovecamille.fakertomcat.util;
 
+import static cn.lovecamille.fakertomcat.util.Constant.webXmlFile;
+
 import cn.hutool.core.io.FileUtil;
 import cn.lovecamille.fakertomcat.catalina.Context;
 import org.jsoup.Jsoup;
@@ -42,7 +44,7 @@ public class WebXmlUtil {
     }
 
     public static String getWelcomeFile(Context context) {
-        String xml = FileUtil.readUtf8String(Constant.webXmlFile);
+        String xml = FileUtil.readUtf8String(webXmlFile);
         Document document = Jsoup.parse(xml);
         Elements elements = document.select("welcome-file");
         for (Element element : elements) {

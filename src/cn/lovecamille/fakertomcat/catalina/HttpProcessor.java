@@ -107,7 +107,7 @@ public class HttpProcessor {
 
             String msg = e.getMessage();
 
-            if (null != msg && msg.length() > 0) {
+            if (null != msg && msg.length() > 20) {
                 msg = msg.substring(0, 19);
             }
 
