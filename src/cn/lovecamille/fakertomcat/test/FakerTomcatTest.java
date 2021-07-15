@@ -112,6 +112,12 @@ public class FakerTomcatTest {
         Assert.assertEquals(html, "Hello FakerTomcat from HelloServlet");
     }
 
+    @Test
+    public void testJavaWebHello() {
+        String html = getContentString("/javaweb/hello");
+        Assert.assertEquals(html, "Hello FakerTomcat from HelloServlet@JavaWeb");
+    }
+
     private String getHttpString(String uri) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         String http = MiniBrowser.getHttpString(url);

@@ -6,7 +6,8 @@
         <Connector port="18082"/>
         <Engine defaultHost="localhost">
             <Host name = "localhost">
-                <Context path="/b" docBase="/Users/wuyan/IdeaProjects/FakerTomcat/b" />
+                <Context path="/b" docBase="/Users/wuyan/IdeaProjects/FakerTomcat/b"/>
+                <Context path="/javaweb" docBase="/Users/wuyan/IdeaProjects/FakerTomcat/JavaWeb/web"/>
             </Host>
         </Engine>
     </Service>

@@ -5,6 +5,7 @@ import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
+import cn.lovecamille.fakertomcat.classloader.WebappClassLoader;
 import cn.lovecamille.fakertomcat.exception.WebConfigDuplicateException;
 import cn.lovecamille.fakertomcat.util.ContextXmlUtil;
 import java.io.File;
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import org.jsoup.Jsoup;
+import org.jsoup.helper.DataUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -34,7 +36,10 @@ public class Context {
     private Map<String, String> servletName_className;
     private Map<String, String> className_servletName;
 
+    private WebappClassLoader webappClassLoader;
+
     public Context(String path, String docBase) {
+        TimeInterval timeInterval = DateUtil.timer();
         this.path = path;
         this.docBase = docBase;
         this.contextWebXmlFile = new File(docBase, ContextXmlUtil.getWatchedResource());
@@ -43,12 +48,16 @@ public class Context {
         this.servletName_className = new HashMap<>();
         this.className_servletName = new HashMap<>();
 
+        ClassLoader commonClassLoader = Thread.currentThread().getContextClassLoader();
+        this.webappClassLoader = new WebappClassLoader(docBase, commonClassLoader);
+
+        LogFactory.get().info("Deploying web application directory {}", this.docBase);
         deploy();
+        LogFactory.get().info("Deploying web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
 
     private void deploy() {
         TimeInterval timeInterval = DateUtil.timer();
-        LogFactory.get().info("Deploying web application directory {}", this.docBase);
         init();
         LogFactory.get().info("Deployment of web application directory {} has finished in {} ms", this.docBase, timeInterval.intervalMs());
     }
@@ -138,5 +147,9 @@ public class Context {
 
     public void setDocBase(String docBase) {
         this.docBase = docBase;
+    }
+
+    public WebappClassLoader getWebappClassLoader() {
+        return webappClassLoader;
     }
 }

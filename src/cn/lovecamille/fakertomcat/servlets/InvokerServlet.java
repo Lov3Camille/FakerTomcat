@@ -2,6 +2,7 @@ package cn.lovecamille.fakertomcat.servlets;
 
 import cn.hutool.core.util.ReflectUtil;
 import cn.lovecamille.fakertomcat.catalina.Context;
+import cn.lovecamille.fakertomcat.util.Constant;
 import cn.lovecamille.fakertomcat.web.HttpRequest;
 import cn.lovecamille.fakertomcat.web.HttpResponse;
 import java.io.IOException;
@@ -30,7 +31,15 @@ public class InvokerServlet extends HttpServlet {
         Context context = request.getContext();
         String servletClassName = context.getServletClassName(uri);
 
-        Object servletObject = ReflectUtil.newInstance(servletClassName);
-        ReflectUtil.invoke(servletObject, "service", request, response);
+        try {
+            Class servletClass = context.getWebappClassLoader().loadClass(servletClassName);
+            System.out.println("servletClass:" + servletClass);
+            System.out.println("servletClass' classloader:" + servletClass.getClassLoader());
+            Object servletObject = ReflectUtil.newInstance(servletClass);
+            ReflectUtil.invoke(servletObject, "service", request, response);
+            response.setStatus(Constant.CODE_200);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
